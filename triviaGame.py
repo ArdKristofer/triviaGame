@@ -41,7 +41,10 @@ elif randomNumber == 3:
     result3List = result3.split()
     # Sort the list so that it corresponds to the correct answer
     result3Sorted = sorted(result3List)
-    if result3Sorted == triviaQA.answer3:
+    # Allow the user the ability input their answer in any case
+    answer3Lower = [i.lower() for i in triviaQA.answer3]
+    result3Lower = [j.lower() for j in result3Sorted]
+    if result3Lower == answer3Lower:
         print("That's correct!")
     else:
         print("Sorry the correct answer is Germany, Italy, and Japan..")
