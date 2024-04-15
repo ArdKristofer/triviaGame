@@ -15,7 +15,7 @@ while diceRoll != (""):
     if diceRoll == "q":
         exit()
 else:
-    randomNumber = (random.randint(1, 3))
+    randomNumber = (random.randint(1, 4))
     print("You chose the number " + str(randomNumber) + "!")
 
 # Let's ask some questions
@@ -48,3 +48,10 @@ elif randomNumber == 3:
         print("That's correct!")
     else:
         print("Sorry the correct answer is Germany, Italy, and Japan..")
+elif randomNumber == 4:
+    print(triviaQA.question4)
+    result4 = input("Type your answer here: ")
+    if result4.casefold() == triviaQA.answer4.casefold():
+        print("Yes! That's correct!")
+    else:
+        print("Sorry the answer is an octagon...")
