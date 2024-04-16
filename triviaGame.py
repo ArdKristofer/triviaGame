@@ -15,7 +15,7 @@ while diceRoll != (""):
     if diceRoll == "q":
         exit()
 else:
-    randomNumber = (random.randint(1, 4))
+    randomNumber = (random.randint(1, 10))
     print("You chose the number " + str(randomNumber) + "!")
 
 # Let's ask some questions
@@ -55,3 +55,45 @@ elif randomNumber == 4:
         print("Yes! That's correct!")
     else:
         print("Sorry the answer is an octagon...")
+elif randomNumber == 5:
+    print(triviaQA.question5)
+    result5 = input("Type your answer here: ")
+    if result5.casefold() == triviaQA.answer5.casefold():
+        print("Excellent job!")
+    else:
+        print("Sorry...the answer is the fear of dogs..")
+elif randomNumber == 6:
+    print(triviaQA.question6)
+    result6 = input("Type your answer here: ")
+    if result6.casefold() == triviaQA.answer6.casefold():
+        print("Correct!")
+    else:
+        print("No..the answer is Ferdinand Magellan..")
+elif randomNumber == 7:
+    print(triviaQA.question7)
+    result7 = input("Type your answer here: ")
+    if result7.casefold() == triviaQA.answer7.casefold():
+        print("Yes! That's right!")
+    else:
+        print("Sorry the correct answer is Samsung")
+elif randomNumber == 8:
+    print(triviaQA.question8)
+    result8 = input("Type your answer here: ")
+    if result8.casefold() == triviaQA.answer8.casefold():
+        print("Great answer! It's correct!")
+    else:
+        print("Sorry..that answer is not right. The correct answer is Pacific Ocean..")
+elif randomNumber == 9:
+    print(triviaQA.question9)
+    result9 = input("Type your answer here: ")
+    if result9.casefold() == triviaQA.answer9.casefold():
+        print("Awesome! That's right!")
+    else:
+        print("Unfortunately the correct answer is brown..")
+elif randomNumber == 10:
+    print(triviaQA.question10)
+    result10 = input("Type your answer here: ")
+    if result10.casefold() == triviaQA.answer10.casefold():
+        print("Amazing! That's correct!")
+    else:
+        print("No sorry..the right answer is Coca Cola..")
