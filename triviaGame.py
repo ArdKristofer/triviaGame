@@ -6,15 +6,14 @@ import triviaQA
 # rolls, they will be presented with a question. Their answer
 # will be checked and return a value of correct or incorrect.
 
-# Prompt the user to press enter to roll for a random number
-diceRoll = input("Press enter to pick a random number! ")
-
-# Determine whether the user's input is valid
-while diceRoll != (""):
+# Let the user choose between rolling for a random number or 
+# exiting the game. Check whether the user entered a valid value
+diceRoll = input("Please press enter to pick a random number or press 'q' to exit. ")
+while diceRoll != "q" and diceRoll != "":
     diceRoll = input("Please press enter to pick a random number or press 'q' to exit. ")
-    if diceRoll == "q":
-        exit()
-else:
+if diceRoll == "q":
+    exit()
+elif diceRoll == "":
     randomNumber = (random.randint(1, 10))
     print("You chose the number " + str(randomNumber) + "!")
 
